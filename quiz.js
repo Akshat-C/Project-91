@@ -1,3 +1,6 @@
+var p1score = 0;
+var p2score = 0;
+
 function logout()
 {
     window.location = "index.html";
@@ -12,8 +15,8 @@ function pname()
 
     document.getElementById("p1n").innerHTML = player1name + ": ";
     document.getElementById("p2n").innerHTML = player2name + ": ";
-    document.getElementById("p1s").innerHTML = "0";
-    document.getElementById("p2s").innerHTML = "0";
+    document.getElementById("p1s").innerHTML = p1score;
+    document.getElementById("p2s").innerHTML = p2score;
 }
 
 function send()
